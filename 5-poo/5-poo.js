@@ -1,23 +1,16 @@
 "use strict";
 
-let beanie = new Product();
-beanie.name = "Un bonnet bien chaud";
-beanie.quantity = 2;
-beanie.price = 19.99;
+let book1 = new Book();
+book1.title = "Le Seigneur des Anneaux";
 
-let short = new Product();
-short.name = "Un short de sport";
-short.quantity = 15;
-short.price = 29.98;
+let book2 = new Book();
+book2.title = "Le Silmarillon";
 
-let tShirt = new Product();
-tShirt.name = "Un T-shirt";
-tShirt.quantity = 176;
-tShirt.price = 9.89;
+let author = new Author();
+author.name = "Tolkien";
 
-let cart = new Cart();
-cart.customer = "Moi";
-cart.addProduct(beanie);
-cart.addProduct(tShirt);
+book1.setAuthor(author);
+book2.setAuthor(author);
 
-console.log(cart.getTotal());
+
+console.log(author);
